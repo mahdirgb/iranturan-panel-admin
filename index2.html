@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامه نویسی ایران توران</title>
+    <script src="چارت/chart.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="کتابخانه بوت استرپ/css/bootstrap.min.css">
+    <script src="کتابخانه بوت استرپ/jquery/jquery.min.js"></script>
+    <script src="کتابخانه بوت استرپ/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body dir="rtl">
+<nav class="container-fluid">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6" id="farzand">
+         <div class="turanlogo">
+            <img src="img/rf7qnib5y2fqzjwunum62usjig6xv0f26yznqeyzt7mu4anu3d.png"  class="img-logo">
+           </div>
+            <div class="admin">
+             <span class="esmail">اسماعیل زلفیان</span>
+             <span class="admin2">مدیر</span>
+             </div>
+             <div class="menu">
+             <ul><li><a href="#" class="sandogh">صندوق ورودی</a></li></ul>
+             <ul><li><a href="#" class="hoshdar">هشدارها</a></li></ul>
+             <button type="button" class="btn-danger" id="danger">2</button>
+             <div class="container">
+                 <div class="squ1"></div>
+                 <div class="squ2"></div>
+                 <div class="squ3"></div>
+                 <div class="squ4"></div>
+             </div>
+             <ul><li><a href="#" class="egmali">بررسی اجمالی</a></li></ul>
+             <ul><li><a href="#" class="karbaran">مدیریت کاربران</a></li></ul>
+             <ul><li><a href="#" class="add">اضافه کردن کاربر</a></li></ul>
+             <ul><li><a href="#" class="list">لیست کاربران</a></li></ul>
+             <ul><li><a href="#" class="sath">نقش و سطح دسترسی کاربر</a></li></ul>
+             <ul><li><a href="#" class="analiz">آنالیزها</a></li></ul>
+             <ul><li><a href="#" class="moshtarakin">مشترکین</a></li></ul>
+            <button type="button" class="btn-danger" id="danger2">34</button>
+            <ul><li><a href="#" class="kanal">کانال ها</a></li></ul>
+            <ul><li><a href="#" class="merge">ادغام ها</a></li></ul>
+            <ul><li><a href="#" class="report">گزارش ها</a></li></ul>
+             </div>
+             <i class="fas fa-times" id="zarb"></i>
+             </div>
+             <div class="col-sm-12 col-12" id="halat">
+              <div class="icon-foter">
+                <i class="fa fa-cart-plus" aria-hidden="true" id="shopping"></i>
+                <i class="fas fa-question" id="question"></i>
+              </div>
+              <span class="clos">خروج از پنل</span>
+             </div>
+              <div class="col-xl-9 col-lg-9 col-sm-12 col-12" id="mother">
+                     <div class="row">
+                        <div id="box-panel1" class="col-sm-6 col-6">
+                        <span class="jadid">مشترکین جدید</span>
+                        <span class="scv">5.597</span>
+                        <span class="pishraft">33.45%+</span>
+                        <img src="img/Group 114.svg" class="rtv">
+                        </div>
+                        <div id="box-panel2" class="col-sm-6 col-6">
+                            <span class="jaryan">جریان ها</span>
+                            <span class="rto">47.403</span>
+                            <span class="dr2">112.45%-</span>
+                            <img src="img/Group 116.svg" class="pasraft">
+                        </div>
+                        <div id="box-panel3" class="col-sm-6 col-6">
+                            <span class="tamol">نرخ تعامل</span>
+                            <span class="evm">25.81</span>
+                            <span class="rtd">62.52%+</span>
+                            <img src="img/Group 114.svg" class="dr3">
+                        </div>
+                        <div id="box-panel4" class="col-sm-6 col-6">
+                            <span class="meyangin">میانگین زمان تماشا</span>
+                            <span class="wel">45.4 دقیقه</span>
+                            <span class="qlt">4.64%+</span>
+                            <img src="img/Group 114.svg" class="dr4">
+                        </div>
+                     </div>
+                   </div>
+                   <div class="col-xl-6 col-lg-8 col-12" id="nemodar">
+                       <div class="row">
+                        <span class="hozar">حضار</span>
+                        <span class="sdf">301.097</span>
+                        <span class="haft">برای هفت روز گذشته</span>
+                        <span class="dfb">62.52%+</span>
+                        <img src="img/Group 114.svg" class="rty">
+                        <div class="myChart">
+                            <canvas id="myChart" width="600" height="250" class="col-xl-12"></canvas>
+                          </div>
+                       </div>
+                   </div>
+                   <div id="wac" class="col-12">
+                    <div class="gauge">
+                      <div class="gauge__body">
+                        <div class="gauge__fill"></div>
+                        <div class="gauge__cover">76.7%</div>
+                      </div>
+                      <img src="img/Group 113.svg" class="img-cover">
+                      <span class="oll">0%</span>
+                      <span class="tyb">100%</span>
+                      <span class="ten">براساس لایک کردن/لایک نکردن</span>
+                    </div>
+                        <span class="rezayat">رضایت مخاطبان</span>
+                        <img src="img/Group 86.svg" class="pom">
+                   </div>
+                   <div id="qsd">
+                     <span class="vebinar">وبینار</span>
+                     <img src="img/Group 112.svg" class="img-vbn">
+                     <span class="matn-vbn">این آموزش برای آشنایی چگونگی فروش بالای %20می باشد این ویبینار شما را در فروش بهتر کمک می کند</span>
+                     <span class="matn-vbn2">وبینار با حضور 2کارشناس فروش می باشد </span>
+                     <span class="amozesh">آموزش بیشتر</span>
+                     
+                   </div>
+                   <div id="padcast" class="col-xl-6 col-lg-8 col-12">
+                     <span class="prt">قسمت های پرطرفدار</span>
+                     <span class="didan">دیدن همه</span>
+                     <div class="live-1">
+                       <span class="yek">1</span>
+                     </div>
+                     <div class="live-2">
+                      <span class="xcv">1</span>
+                    </div>
+                    <div class="live-3">
+                      <span class="edf">1</span>
+                    </div>
+                    <div class="live-4">
+                      <span class="wdg">1</span>
+                    </div>
+                    <div class="live-5">
+                      <span class="wer">1</span>
+                    </div>
+                    <div class="zendeh">
+                    <span class="forosh1">پادکست فروش 33:زنده</span>
+                    <span class="forosh2">پادکست فروش 33:زنده</span>
+                    <span class="forosh3">پادکست فروش 33:زنده</span>
+                    <span class="forosh4">پادکست فروش 33:زنده</span>
+                    <span class="forosh5">پادکست فروش 33:زنده</span>
+                    <span class="mehman1">مهمان انسیه سوری</span>
+                    </div>
+                   </div>
+              <div class="menu-mobile">
+              <i class="fas fa-bars" id="fas"></i>
+              </div>
+    </div>
+</nav>
+<script src="jquery/jquery-3.5.1.min.js">
+</script>
+<script>
+  $(document).ready($(window).bind("resize", checkPosition));
+function checkPosition(){
+    if($(window).width()<768)
+    {
+        $("#fas").click(function(){
+          $("#farzand").css('margin-right','0px')
+          $("#fas").css('visibility','hidden')
+          $("#zarb").css('visibility','visible')
+      })
+      $("#zarb").click(function(){
+          $("#fas").css('visibility','visible')
+          $("#farzand").css('margin-right','-400px')
+          $("#zarb").css('visibility','hidden')
+      })
+      $("a").click(function(){
+          $("a").css('text-decoration','none')
+          $("a").css('color','#ffff')
+      }) 
+ }
+}
+var ctx = document.getElementById("myChart").getContext('2d');
+Chart.defaults.global.defaultFontColor = "#B7ADAD";
+var barChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ["مهر", "آبان", " آذر", "دی","بهمن","اسفند","فروردین"],
+    datasets: [{
+      label: 'data-1',
+      data: [330, 330, 310, 340,320,315,335,300],
+      backgroundColor: "#1cbca7",
+    }]
+  }
+});
+
+</script>
+</body>
+</html>
