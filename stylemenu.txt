@@ -1,0 +1,30 @@
+.dropdown-menu{
+    background-color: #1E7070 !important;
+    text-align:start !important;
+    padding: .5em .5em .2em 4em!important;
+}
+.dropdown-item{
+    color: #ffffff !important;
+    font-size: 18px;
+    margin-top: 0.4em;
+    margin-bottom:0.4em;
+}
+.dropdown-item:hover{
+    background-color: #1CBCA7 !important;
+    border-radius: 5px;
+}
+.admin{
+color: #ADAFB1 !important;
+}
+.nav-link{
+    color: white !important;
+}
+.analysis{
+    color: #ADAFB1 !important;
+}
+.rounded-circle{
+    cursor: pointer;
+}
+.name-admin{
+    color: white;
+}

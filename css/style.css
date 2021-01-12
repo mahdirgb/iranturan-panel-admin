@@ -48,44 +48,60 @@
          url('fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
          url('fonts/ttf/IRANSansWeb.ttf') format('truetype');
 }
+.navbar{
+    padding: 20px !important;
+}
+.sidebar{
+    width: 300px;
+    border: 2px solid #1E7070;
+    background-color: yellowgreen;
+    position: absolute;
+    z-index: 2000;
+    padding: 10px;
+    background-color: #1E7070 !important;
+   margin-right: -300px;
+   font-size: 20px;
+   top: 0;
+   transition: all ease 1s;
+}
+.fas{
+    z-index: 2010;
+    cursor: pointer;
+}
+#times{
+    margin-right: -10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.badge{
+    margin-right: 6.7em;
+    margin-top: -2.35em;
+}
+.navbar-nav{
+    margin-top:1.5em;
+    margin-right: -0.5em;
+    display: table !important;
+}
+
+span{
+    color: white !important;
+}
 *{
     font-family:IRANSans;
     box-sizing: border-box;
 }
-.dropdown-menu{
-    background-color: #1E7070 !important;
-    text-align:start !important;
-    padding: .5em .5em .2em 4em!important;
+a:hover{
+  background-color: #1CBCA7;
+  border-radius: 5px;
 }
-.dropdown-item{
-    color: #ffffff !important;
-    font-size: 18px;
-    margin-top: 0.4em;
-    margin-bottom:0.4em;
+#adminSubmenu{
+ margin-right: -2em;
+
 }
-.dropdown-item:hover{
-    background-color: #1CBCA7 !important;
-    border-radius: 5px;
-}
-.admin{
-color: #ADAFB1 !important;
-}
-.nav-link{
-    color: white !important;
-}
-.analysis{
-    color: #ADAFB1 !important;
-}
-.rounded-circle{
-    cursor: pointer;
-}
-.name-admin{
-    color: white;
-}
+
 .card{
     color: white;
     text-align: center;
-
 }
 hr{
     background-color: white;
@@ -93,8 +109,81 @@ hr{
 b{
     font-size: 30px;
 }
+.card-item{
+    line-height: 30px;
+}
+.item{
+    cursor: pointer;
+}
+.card-title{
+    cursor: pointer;
+    display: table;
+}
+.icons-box{
+    position: absolute;
+    right: 90%;
+}
+#podcast{
+    background-color: #1E7070;
+    text-align: right;
+}
 
+#small-box{
+    background-color: #00c0ef;
+}
+#first-child-card{
+    color: rgb(19, 190, 76);
+}
+#last-child-card{
+    background-color: #91397c;
+}
+.btn-dark{
+    background-color: #81a3a3 !important;
+    border: none;
+    padding: 10px;
+}
+.first-item{
+    width: 35px;
+    height: 35px;
+    background-color: #81A3A3;
+}
+.Internal-text{
+    font-size: 20px;
+    width:30px;
+    height:30px;
+    background-color: #81A3A3;
+    text-align: center;
+    display: inline-block;
+}
+.View-podcasts{
+    width: 230px;
+    margin-top: -23em;
+    margin-right: 3em;
+}
+.text-item{
+    font-size: 20px;
+    color: white;
+}
 
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+#myChart{
+    height: 420px !important;
+}
+.sidebar{
+    height: 700px;
+}
+.inner{
+    width: 40px;
+}
+.text-link{
+    color: white;
+}
+h5{
+    display: inline-block;
+}
 
 @media only screen and (max-width:992px){
     .rounded-circle,.name-admin{
@@ -102,6 +191,12 @@ b{
     }
     .navbar-nav{
         text-align: start;
+    }
+    #times{
+        margin-left: 96%;
+    }
+    .content{
+      margin-right: 0px !important;
     }
 }
 @media (min-width: 300px) and (max-width:500px){
@@ -111,10 +206,25 @@ b{
     .dropdown-item{
         font-size: 1em;
     }
+    
 }
 @media (min-width: 501px) and (max-width:992px){
     .dropdown-menu{
         width: 20em !important;
     }
 }
-
+@media (min-width: 769px) and (max-width:876px){
+.Average{
+font-size: 16px;
+}
+}
+@media (min-width: 769px) and (max-width:2000px){
+    .navbar-toggler-icon{
+        visibility: hidden;
+    }
+}
+@media (min-width: 0px) and (max-width:768px){
+    .col-md-3{
+        margin-top: 20px;
+    }
+}
